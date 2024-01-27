@@ -17,6 +17,18 @@
    ```
    docker-compose up -d
    ```
+5. Clonar el archivo **.env.template** y renombrar la copia a **.env**
+
+6. Llenar las variables de entorno en el archivo **.env** 
+
+7. Ejecutar la aplicación en modo desarrollo con el comando 
+   ``` 
+   npm run start:dev 
+   ``` 
+8. Reconstruir la base de datos con la semilla
+   ```
+   POST http://localhost:3000/api/v2/seed
+   ```
 
 ## Stack usado
 * Mongo
